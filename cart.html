@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="cart">
+        <a href="/index.html" class="go-back">Back</a>
+    </div>
+    <div class="main">
+        <div class="cart-section">
+            <div class="content">
+                <h2>Cart (<span id="quantity1">1</span>)</h2>
+                <div class="line"></div>
+                <div class="item-container">
+                    <div class="first">
+                        <div class="image">
+                            <img src="/images/1.jpg" alt="phone">
+                        </div>
+                        <div class="name">
+                            <h4>XIAOMI Redmi Note 12 Pro+ 5G 6.67" 8GB RAM/256GB ROM</h4>
+                                <h4>Android 12 - Black</h4>
+                                <p>Few units left</p>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <div class="price"><h3>₦ 315,000</h3></div>
+                        <div class="old-price">
+                            <p class="first-p">₦ 330,000</p>
+                            <p class="price">-5%</p>
+                        </div>
+                        <div class="buttons">
+                            <div class="minus-but" id="minusButton">-</div>
+                            <p id="quantity">1</p>
+                            <div class="add-but" id="plusButton">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="remove">
+                    <a href="/index.html">
+                        <i class="fa-solid fa-trash" <i class="fa-solid fa-empty-set" style="color: #F68B1E;"></i>
+                        REMOVE
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="summary">
+            <h4>CART SUMMARY</h4>
+            <div class="line"></div>
+            <div class="total">
+                <p>Subtotal</p>
+                <h4  id="formattedTotalPriceSub">0</h4>
+            </div>
+            <div class="line"></div>
+            <div class="checkout">
+                <P>CHECKOUT ( <span id="formattedTotalPriceSubC">0</span>)</P>
+            </div>
+        </div>
+    </div>
+    <script src="./cart.js"></script>
+</body>
+</html>
